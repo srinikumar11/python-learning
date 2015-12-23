@@ -1,0 +1,148 @@
+
+ Srini could you add documentation to explain the steps to set up a completely new project?
+
+Is there a skeleton database/project?
+Composer config?
+Any other steps?
+
+If you could provide a full rundown that would be great
+
+DO any templates need to be setup? Or will it inherit them from the bundle?
+What needs to be configured with for the atdw API?
+A list of the available addon bundles that can be enabled and how to do so
+Could you talk me through the steps to recreate the melbourne now homepage in the Goulburn River Valley staging environment, also if we wanted to override the 'hero' block template how would we do so?
+
+* Build a CMS Platform from scratch with multisite capabilities.
+* Built an enterprise grade social media content aggregator.
+* Lead the team and built a highly successfull project our organisation projects for RACS surgical training assessment.
+* Built a SaaS platform that significantly optimised for Tourism Platform with ease of use CMS.
+* Worked on the largest Government digital campaign of 2014, highest user engagement for Queensland Government Trusree deparment.
+* Led a team of highly skiled developers and designers.
+
+Specialties: Technical Leadership, Software Architecture, Frontend Development (ReactJS / Flux, AngularJS, ES6), Responsive Web Development (Twitter Bootstrap, Material Design Light), Cloud Deployment and Horizontal Scaling, Team Leading, Mentoring, Solution Focused, Documentation, Able to handle pressure and stress
+
+Added missing bundles Kiosk, Campaign Map, General Content tab block, 
+Added required block service
+Added controllers
+added routing
+Added email templates
+Updated parameters.yml.dist
+Template updates
+Added assets
+Added gulp files
+added Cap files 
+
+
+git commit -am "fixes for, if an internel url is not provided while menu created - error in rendering template Key 'internalUrl' for array with keys 'id, name, classAttr, urlType, externalUrl, target, quickLink' does not exist in MenuBlockBundle:Helpers:form_menu_item.html.twig at line 7"
+
+Hi Fiona,
+This is due to the communication gap. As mentioned in our meeting, MRT and VB/BRT has different versions of project. If you are needing a details documentation, Providing list of details that you are expecting would help me in preparing document. I understand that it takes more time on communicating internally back and forth, due to the expectation mismatch. I am trying to provide as much as details form what I know. Please let me know if you are having specific expectations in documentation. 
+
+Let me share a document for VB TXA Integration status. Please let me know your thoughts. 
+
+
+
+Srini we need some insight into what is required to get the following sites finalised and live:
+
+http://suncountry.stage.ev7.com.au/
+http://ghume.stage.ev7.com.au/
+http://gan.stage.ev7.com.au/
+http://den.stage.ev7.com.au/
+http://swanhill.stage.ev7.com.au/
+
+
+
+Find out whether will they use only platform blocks
+
+Style Guide
+
+Whats agreed
+
+Working on transition branch
+
+Header is different from platform menu - while checking den
+
+Confirmation for whether we need to follow platform menu
+
+Default Destination & Additional destinations for each site. 
+
+Creating platform templates in backend
+
+Check why den home page is not good
+
+Good to know about content migration
+
+Check assetic css are available.
+
+Finalise Media site relationship
+
+we need vcid and bookeasy key for each subsite
+
+
+
+->add('funnel', 'entity', array(
+                'class' => 'Tpse\Bundle\SocialContentBundle\Entity\Funnel',
+                'property' => 'name',
+                'label' => 'Funnel',
+        ))
+
+
+fiona [11:31 AM] 
+Hi Srini
+- https://app.asana.com/0/66590141839516/68099323536838 
+- https://app.asana.com/0/66590141839516/66590141839526 this document needs to be fleshed out in a lot more detail, with enough information that we can use it to map out exactly what needs to be done (for example, 'File & folder structure changed to adopt global styles' needs to have more information about while files/folders and what changes are required)
+
+basically, we need to be planning out the work in a lot more detail and being clear about what is being done, why, and the potential impacts of those changes.  This to ensure that we're clear on what is being done, the client can be assured about what is being done and make decisions about whether to proceed, we can advise the client how long something will take to do, and reduce risk
+We need that same level of detail for this task: https://app.asana.com/0/66590141839516/66590141839528
+and this task https://app.asana.com/0/66590141839513/66945767489428
+
+
+<parameters>
+<row><param>API_QUERY_ID</param><value>923432348777</value></row>
+<row><param>PRODUCT_CATEGORY_LIST</param><value>ACCOMM</value></row>
+<row><param>RESULTS_PER_PAGE</param><value>10</value></row>
+<row><param>STATE</param><value>VICTORIA</value></row>>
+</parameters>
+
+
+<parameters>
+<row><param>PRODUCT_CATEGORY_LIST</param><value>ACCOMM</value></row>
+<row><param>ADDRESS_RETURN</param><value>YES</value></row>
+<row><param>STATE</param><value>VICTORIA</value></row>
+<row><param>RESULTS_PER_PAGE</param><value>10</value></row>
+</parameters>
+
+
+
+
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1611;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1645;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1646;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1711;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1712;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1794;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1797;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1798;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1813;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 1814;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 2071;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 2072;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 2684;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 2685;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 2802;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 3046;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 3080;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 3194;
+DELETE FROM `murray_proddb`.`page__snapshot` WHERE `page__snapshot`.`id` = 3350;
+
+
+rewrite ^/springdeals$ http://www.visitthemurray.com.au/golfdeals permanent;
+
+
+location ~ /springdeals) {
+    return 301 http://www.visitthemurray.com.au/golfdeals$1;
+}
+
+
+CHENNAI CREDIT CARD OPERATIONS
+HDFC0000128
